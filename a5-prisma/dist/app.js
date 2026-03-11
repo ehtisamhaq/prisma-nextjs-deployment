@@ -17,7 +17,6 @@ app.set("views", path.resolve(process.cwd(), `src/app/templates`));
 // );
 app.use(cookieParser());
 app.use(cors({
-    // origin: [process.env.FRONTEND_URL!, process.env.BETTER_AUTH_URL!],
     origin: process.env.FRONTEND_URL,
     credentials: true,
     // methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
